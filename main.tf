@@ -12,3 +12,12 @@ terraform {
     }
   }
 }
+
+variable "dummy" {
+  type    = string
+  default = "dummy"
+}
+
+output "dummy" {
+  value = var.dummy
+}
